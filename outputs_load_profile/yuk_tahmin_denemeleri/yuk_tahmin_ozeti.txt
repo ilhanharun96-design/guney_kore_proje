@@ -1,0 +1,181 @@
+Yuk senaryolari icin B0 (TEST VERISI KULLANILMAMISTIR)
+Yuk serisi: 2021-09-30 17:00:00 - 2022-08-31 23:00:00 (8047 saat)
+Profil/kalibrasyon kesme boslugu: 2 days 00:00:00; kalibrasyon penceresi: 8 hafta
+Seviye: origin aninda bilinen BASLANGIC enerjisi serisinin son 168 saat ortalamasi.
+  tamamlandi: U100 / 2022-06
+  tamamlandi: U100 / 2022-07
+  tamamlandi: U100 / 2022-08
+  tamamlandi: F50 / 2022-06
+  tamamlandi: F50 / 2022-07
+  tamamlandi: F50 / 2022-08
+  tamamlandi: F25 / 2022-06
+  tamamlandi: F25 / 2022-07
+  tamamlandi: F25 / 2022-08
+
+========================================================================
+SENARYO: U100  (birim: kWh/saat)
+========================================================================
+
+[MAE]
+fold                                2022-06  2022-07  2022-08  ortalama
+yontem                                                                 
+B0_yuk_serisi                        33.177   36.156   35.888    35.074
+Profil_statik_yuk                    41.471   57.033   55.371    51.292
+Naif_baslangic_tahmini_yuk_sanildi   61.629   69.576   75.545    68.916
+
+[WAPE]
+fold                                2022-06  2022-07  2022-08  ortalama
+yontem                                                                 
+B0_yuk_serisi                        20.329   19.251   18.711    19.430
+Profil_statik_yuk                    25.411   30.367   28.869    28.215
+Naif_baslangic_tahmini_yuk_sanildi   37.762   37.045   39.386    38.065
+
+[bias]
+fold                                2022-06  2022-07  2022-08  ortalama
+yontem                                                                 
+B0_yuk_serisi                         1.012    2.504   -1.704     0.604
+Naif_baslangic_tahmini_yuk_sanildi    1.006    2.570   -1.752     0.608
+Profil_statik_yuk                    32.554   54.453   51.991    46.333
+
+[zirve_recall_h24]
+fold                                2022-06  2022-07  2022-08  ortalama
+yontem                                                                 
+B0_yuk_serisi                         0.486    0.520    0.520     0.509
+Naif_baslangic_tahmini_yuk_sanildi    0.417    0.427    0.360     0.401
+Profil_statik_yuk                     0.514    0.573    0.547     0.545
+
+[zirve_gercek_tahmin_orani]
+fold                                2022-06  2022-07  2022-08  ortalama
+yontem                                                                 
+B0_yuk_serisi                         0.958    0.924    0.923     0.935
+Naif_baslangic_tahmini_yuk_sanildi    0.698    0.677    0.644     0.673
+Profil_statik_yuk                     1.213    1.325    1.298     1.279
+
+K1 (B0 < statik profil: ortalama MAE dusuk ve >=2/3 kivrim): 35.07 vs 51.29; 3/3 -> PASS
+Bilgi: B0 yuk tahmini MAE 35.07; naif (baslangic tahmini yuk sanilsa) MAE 68.92
+
+[Ust sinir q=0.90, kivrim bazinda]
+   fold  kapsama  kapsama_zirve  kapsama_h24  pinball  genislik
+2022-06    0.884          0.930        0.885    7.538    52.041
+2022-07    0.879          0.931        0.875    8.640    58.115
+2022-08    0.911          0.934        0.914    8.473    65.619
+
+[Ust sinir, kivrimlar uzerinden ortalama]
+      kapsama  kapsama_zirve  kapsama_h24  pinball  genislik
+q                                                           
+0.80    0.793          0.868        0.789   12.910    38.533
+0.90    0.891          0.932        0.891    8.217    58.592
+0.95    0.943          0.973        0.942    4.873    76.253
+K3 (q=0.90 kapsama ort. 0.85-0.95 ve hicbir kivrimda <0.85): ort=0.891, min=0.879 -> PASS
+
+========================================================================
+SENARYO: F50  (birim: kWh/saat)
+========================================================================
+
+[MAE]
+fold                                2022-06  2022-07  2022-08  ortalama
+yontem                                                                 
+B0_yuk_serisi                        37.907   42.996   40.527    40.477
+Profil_statik_yuk                    44.861   60.321   58.208    54.463
+Naif_baslangic_tahmini_yuk_sanildi   50.818   57.903   59.720    56.147
+
+[WAPE]
+fold                                2022-06  2022-07  2022-08  ortalama
+yontem                                                                 
+B0_yuk_serisi                        23.214   22.906   21.124    22.415
+Profil_statik_yuk                    27.473   32.136   30.340    29.983
+Naif_baslangic_tahmini_yuk_sanildi   31.120   30.848   31.129    31.032
+
+[bias]
+fold                                2022-06  2022-07  2022-08  ortalama
+yontem                                                                 
+B0_yuk_serisi                         1.101    2.468   -1.687     0.628
+Naif_baslangic_tahmini_yuk_sanildi    1.097    2.463   -1.706     0.618
+Profil_statik_yuk                    32.632   54.387   51.956    46.325
+
+[zirve_recall_h24]
+fold                                2022-06  2022-07  2022-08  ortalama
+yontem                                                                 
+B0_yuk_serisi                         0.528    0.587    0.547     0.554
+Naif_baslangic_tahmini_yuk_sanildi    0.486    0.493    0.413     0.464
+Profil_statik_yuk                     0.583    0.613    0.587     0.594
+
+[zirve_gercek_tahmin_orani]
+fold                                2022-06  2022-07  2022-08  ortalama
+yontem                                                                 
+B0_yuk_serisi                         0.960    0.936    0.930     0.942
+Naif_baslangic_tahmini_yuk_sanildi    0.817    0.779    0.770     0.789
+Profil_statik_yuk                     1.224    1.330    1.308     1.287
+
+K1 (B0 < statik profil: ortalama MAE dusuk ve >=2/3 kivrim): 40.48 vs 54.46; 3/3 -> PASS
+Bilgi: B0 yuk tahmini MAE 40.48; naif (baslangic tahmini yuk sanilsa) MAE 56.15
+
+[Ust sinir q=0.90, kivrim bazinda]
+   fold  kapsama  kapsama_zirve  kapsama_h24  pinball  genislik
+2022-06    0.887          0.900        0.886    8.768    63.581
+2022-07    0.872          0.948        0.866    9.926    69.285
+2022-08    0.920          0.967        0.921    9.722    75.402
+
+[Ust sinir, kivrimlar uzerinden ortalama]
+      kapsama  kapsama_zirve  kapsama_h24  pinball  genislik
+q                                                           
+0.80    0.796          0.873        0.794   15.049    45.979
+0.90    0.893          0.939        0.891    9.472    69.423
+0.95    0.954          0.992        0.956    5.650    93.195
+K3 (q=0.90 kapsama ort. 0.85-0.95 ve hicbir kivrimda <0.85): ort=0.893, min=0.872 -> PASS
+
+========================================================================
+SENARYO: F25  (birim: kWh/saat)
+========================================================================
+
+[MAE]
+fold                                2022-06  2022-07  2022-08  ortalama
+yontem                                                                 
+B0_yuk_serisi                        43.337   47.918   44.902    45.385
+Naif_baslangic_tahmini_yuk_sanildi   47.355   53.160   52.029    50.848
+Profil_statik_yuk                    49.593   63.460   61.229    58.094
+
+[WAPE]
+fold                                2022-06  2022-07  2022-08  ortalama
+yontem                                                                 
+B0_yuk_serisi                        26.544   25.535   23.404    25.161
+Naif_baslangic_tahmini_yuk_sanildi   29.005   28.329   27.118    28.151
+Profil_statik_yuk                    30.376   33.818   31.913    32.036
+
+[bias]
+fold                                2022-06  2022-07  2022-08  ortalama
+yontem                                                                 
+B0_yuk_serisi                         1.075    2.424   -1.678     0.607
+Naif_baslangic_tahmini_yuk_sanildi    1.067    2.412   -1.696     0.595
+Profil_statik_yuk                    32.592   54.338   51.930    46.287
+
+[zirve_recall_h24]
+fold                                2022-06  2022-07  2022-08  ortalama
+yontem                                                                 
+B0_yuk_serisi                         0.514    0.573    0.587     0.558
+Naif_baslangic_tahmini_yuk_sanildi    0.500    0.507    0.467     0.491
+Profil_statik_yuk                     0.542    0.587    0.600     0.576
+
+[zirve_gercek_tahmin_orani]
+fold                                2022-06  2022-07  2022-08  ortalama
+yontem                                                                 
+B0_yuk_serisi                         0.942    0.939    0.956     0.946
+Naif_baslangic_tahmini_yuk_sanildi    0.894    0.861    0.857     0.871
+Profil_statik_yuk                     1.187    1.340    1.329     1.285
+
+K1 (B0 < statik profil: ortalama MAE dusuk ve >=2/3 kivrim): 45.39 vs 58.09; 3/3 -> PASS
+Bilgi: B0 yuk tahmini MAE 45.39; naif (baslangic tahmini yuk sanilsa) MAE 50.85
+
+[Ust sinir q=0.90, kivrim bazinda]
+   fold  kapsama  kapsama_zirve  kapsama_h24  pinball  genislik
+2022-06    0.884          0.903        0.882   10.256    70.845
+2022-07    0.876          0.943        0.874   11.716    78.958
+2022-08    0.935          0.973        0.934   11.462    88.964
+
+[Ust sinir, kivrimlar uzerinden ortalama]
+      kapsama  kapsama_zirve  kapsama_h24  pinball  genislik
+q                                                           
+0.80    0.806          0.876        0.806   17.172    50.782
+0.90    0.898          0.940        0.897   11.145    79.589
+0.95    0.949          0.981        0.949    6.700   103.667
+K3 (q=0.90 kapsama ort. 0.85-0.95 ve hicbir kivrimda <0.85): ort=0.898, min=0.876 -> PASS

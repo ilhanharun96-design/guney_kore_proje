@@ -1,0 +1,25 @@
+ELEKTRİKLİ ARAÇ ŞARJ TALEBİ - EDA ÖZETİ
+=======================================================
+Toplam saatlik kayıt: 8767
+Başlangıç: 2021-09-30 17:00:00
+Bitiş: 2022-09-30 23:00:00
+Toplam oturum: 72843
+Toplam oturum enerjisi: 1270576.21 kWh
+Sıfır oturumlu saat: 988
+Tam gün sayısı: 365
+
+En yoğun saatler:
+18:00 - 17.78 oturum/saat
+17:00 - 17.37 oturum/saat
+19:00 - 15.04 oturum/saat
+16:00 - 14.09 oturum/saat
+20:00 - 13.01 oturum/saat
+
+Haftanın günlerine göre talep:
+Pazartesi: 8.27
+Salı: 8.53
+Çarşamba: 8.72
+Perşembe: 8.81
+Cuma: 8.66
+Cumartesi: 7.97
+Pazar: 7.20

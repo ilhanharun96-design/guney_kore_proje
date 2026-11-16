@@ -1,0 +1,228 @@
+======================================================================
+DOSYA: C:\Users\HARUN\Desktop\ANA_proje\guney_kore_proje\outputs_feature_engineering\train_verisi.csv
+  Satir: 170940  Sutun: 49
+  Sutunlar ve tipleri:
+    origin_datetime: object
+    origin_hour: int64
+    origin_weekday: int64
+    origin_month: int64
+    origin_day_of_year: int64
+    origin_is_weekend: int64
+    origin_hour_sin: float64
+    origin_hour_cos: float64
+    origin_weekday_sin: float64
+    origin_weekday_cos: float64
+    origin_day_of_year_sin: float64
+    origin_day_of_year_cos: float64
+    session_start_count_lag_0: int64
+    session_start_count_lag_1: float64
+    session_start_count_lag_2: float64
+    session_start_count_lag_3: float64
+    session_start_count_lag_24: float64
+    session_start_count_lag_48: float64
+    session_start_count_lag_168: float64
+    session_start_count_rolling_mean_24: float64
+    session_start_count_rolling_std_24: float64
+    session_start_count_rolling_mean_168: float64
+    session_start_count_rolling_std_168: float64
+    started_session_energy_kwh_lag_0: float64
+    started_session_energy_kwh_lag_1: float64
+    started_session_energy_kwh_lag_2: float64
+    started_session_energy_kwh_lag_3: float64
+    started_session_energy_kwh_lag_24: float64
+    started_session_energy_kwh_lag_48: float64
+    started_session_energy_kwh_lag_168: float64
+    started_session_energy_kwh_rolling_mean_24: float64
+    started_session_energy_kwh_rolling_std_24: float64
+    started_session_energy_kwh_rolling_mean_168: float64
+    started_session_energy_kwh_rolling_std_168: float64
+    target_hour: int64
+    target_weekday: int64
+    target_month: int64
+    target_day_of_year: int64
+    target_is_weekend: int64
+    target_hour_sin: float64
+    target_hour_cos: float64
+    target_weekday_sin: float64
+    target_weekday_cos: float64
+    target_day_of_year_sin: float64
+    target_day_of_year_cos: float64
+    forecast_horizon: int64
+    target_datetime: object
+    session_start_count: int64
+    started_session_energy_kwh: float64
+  Ilk 2 satir:
+       origin_datetime  origin_hour  origin_weekday  origin_month  origin_day_of_year  origin_is_weekend  origin_hour_sin  origin_hour_cos  origin_weekday_sin  origin_weekday_cos  origin_day_of_year_sin  origin_day_of_year_cos  session_start_count_lag_0  session_start_count_lag_1  session_start_count_lag_2  session_start_count_lag_3  session_start_count_lag_24  session_start_count_lag_48  session_start_count_lag_168  session_start_count_rolling_mean_24  session_start_count_rolling_std_24  session_start_count_rolling_mean_168  session_start_count_rolling_std_168  started_session_energy_kwh_lag_0  started_session_energy_kwh_lag_1  started_session_energy_kwh_lag_2  started_session_energy_kwh_lag_3  started_session_energy_kwh_lag_24  started_session_energy_kwh_lag_48  started_session_energy_kwh_lag_168  started_session_energy_kwh_rolling_mean_24  started_session_energy_kwh_rolling_std_24  started_session_energy_kwh_rolling_mean_168  started_session_energy_kwh_rolling_std_168  target_hour  target_weekday  target_month  target_day_of_year  target_is_weekend  target_hour_sin  target_hour_cos  target_weekday_sin  target_weekday_cos  target_day_of_year_sin  target_day_of_year_cos  forecast_horizon      target_datetime  session_start_count  started_session_energy_kwh
+0  2021-10-07 17:00:00           17               3            10                 280                  0        -0.965926        -0.258819            0.433884           -0.900969               -0.994567                0.104101                         11                        8.0                        8.0                        8.0                         7.0                        13.0                          1.0                             5.916667                            5.755275                              5.279762                             4.465336                            170.03                             93.03                             75.53                            138.93                              99.74                             272.53                               27.68                                   91.828333                                  99.148541                                    87.678393                                   76.797447           18               3            10                 280                  0        -1.000000    -1.836970e-16            0.433884           -0.900969               -0.994567                0.104101                 1  2021-10-07 18:00:00                   23                      323.10
+1  2021-10-07 17:00:00           17               3            10                 280                  0        -0.965926        -0.258819            0.433884           -0.900969               -0.994567                0.104101                         11                        8.0                        8.0                        8.0                         7.0                        13.0                          1.0                             5.916667                            5.755275                              5.279762                             4.465336                            170.03                             93.03                             75.53                            138.93                              99.74                             272.53                               27.68                                   91.828333                                  99.148541                                    87.678393                                   76.797447           19               3            10                 280                  0        -0.965926     2.588190e-01            0.433884           -0.900969               -0.994567                0.104101                 2  2021-10-07 19:00:00                   11                      255.95
+======================================================================
+DOSYA: C:\Users\HARUN\Desktop\ANA_proje\guney_kore_proje\outputs_feature_engineering\validation_verisi.csv
+  Satir: 17856  Sutun: 49
+  Sutunlar ve tipleri:
+    origin_datetime: object
+    origin_hour: int64
+    origin_weekday: int64
+    origin_month: int64
+    origin_day_of_year: int64
+    origin_is_weekend: int64
+    origin_hour_sin: float64
+    origin_hour_cos: float64
+    origin_weekday_sin: float64
+    origin_weekday_cos: float64
+    origin_day_of_year_sin: float64
+    origin_day_of_year_cos: float64
+    session_start_count_lag_0: int64
+    session_start_count_lag_1: float64
+    session_start_count_lag_2: float64
+    session_start_count_lag_3: float64
+    session_start_count_lag_24: float64
+    session_start_count_lag_48: float64
+    session_start_count_lag_168: float64
+    session_start_count_rolling_mean_24: float64
+    session_start_count_rolling_std_24: float64
+    session_start_count_rolling_mean_168: float64
+    session_start_count_rolling_std_168: float64
+    started_session_energy_kwh_lag_0: float64
+    started_session_energy_kwh_lag_1: float64
+    started_session_energy_kwh_lag_2: float64
+    started_session_energy_kwh_lag_3: float64
+    started_session_energy_kwh_lag_24: float64
+    started_session_energy_kwh_lag_48: float64
+    started_session_energy_kwh_lag_168: float64
+    started_session_energy_kwh_rolling_mean_24: float64
+    started_session_energy_kwh_rolling_std_24: float64
+    started_session_energy_kwh_rolling_mean_168: float64
+    started_session_energy_kwh_rolling_std_168: float64
+    target_hour: int64
+    target_weekday: int64
+    target_month: int64
+    target_day_of_year: int64
+    target_is_weekend: int64
+    target_hour_sin: float64
+    target_hour_cos: float64
+    target_weekday_sin: float64
+    target_weekday_cos: float64
+    target_day_of_year_sin: float64
+    target_day_of_year_cos: float64
+    forecast_horizon: int64
+    target_datetime: object
+    session_start_count: int64
+    started_session_energy_kwh: float64
+  Ilk 2 satir:
+       origin_datetime  origin_hour  origin_weekday  origin_month  origin_day_of_year  origin_is_weekend  origin_hour_sin  origin_hour_cos  origin_weekday_sin  origin_weekday_cos  origin_day_of_year_sin  origin_day_of_year_cos  session_start_count_lag_0  session_start_count_lag_1  session_start_count_lag_2  session_start_count_lag_3  session_start_count_lag_24  session_start_count_lag_48  session_start_count_lag_168  session_start_count_rolling_mean_24  session_start_count_rolling_std_24  session_start_count_rolling_mean_168  session_start_count_rolling_std_168  started_session_energy_kwh_lag_0  started_session_energy_kwh_lag_1  started_session_energy_kwh_lag_2  started_session_energy_kwh_lag_3  started_session_energy_kwh_lag_24  started_session_energy_kwh_lag_48  started_session_energy_kwh_lag_168  started_session_energy_kwh_rolling_mean_24  started_session_energy_kwh_rolling_std_24  started_session_energy_kwh_rolling_mean_168  started_session_energy_kwh_rolling_std_168  target_hour  target_weekday  target_month  target_day_of_year  target_is_weekend  target_hour_sin  target_hour_cos  target_weekday_sin  target_weekday_cos  target_day_of_year_sin  target_day_of_year_cos  forecast_horizon      target_datetime  session_start_count  started_session_energy_kwh
+0  2022-07-31 00:00:00            0               6             7                 212                  1         0.000000         1.000000           -0.781831             0.62349               -0.484089               -0.875019                          1                        3.0                       10.0                       17.0                         3.0                         4.0                          4.0                                8.500                            6.093475                             11.238095                               7.7947                             11.62                             57.29                            265.41                            238.61                              86.90                             105.21                              139.63                                  142.574583                                 103.289587                                   195.034762                                  140.824113            0               0             8                 213                  0              0.0              1.0                 0.0                 1.0               -0.499069               -0.866562                24  2022-08-01 00:00:00                    1                       39.52
+1  2022-07-31 01:00:00            1               6             7                 212                  1         0.258819         0.965926           -0.781831             0.62349               -0.484089               -0.875019                          0                        1.0                        3.0                       10.0                         3.0                         0.0                          0.0                                8.375                            6.240210                             11.238095                               7.7947                              0.00                             11.62                             57.29                            265.41                              97.43                               0.00                                0.00                                  138.515000                                 106.989424                                   195.034762                                  140.824113            0               0             8                 213                  0              0.0              1.0                 0.0                 1.0               -0.499069               -0.866562                23  2022-08-01 00:00:00                    1                       39.52
+======================================================================
+DOSYA: C:\Users\HARUN\Desktop\ANA_proje\guney_kore_proje\outputs_feature_engineering\test_verisi.csv
+  Satir: 17004  Sutun: 49
+  Sutunlar ve tipleri:
+    origin_datetime: object
+    origin_hour: int64
+    origin_weekday: int64
+    origin_month: int64
+    origin_day_of_year: int64
+    origin_is_weekend: int64
+    origin_hour_sin: float64
+    origin_hour_cos: float64
+    origin_weekday_sin: float64
+    origin_weekday_cos: float64
+    origin_day_of_year_sin: float64
+    origin_day_of_year_cos: float64
+    session_start_count_lag_0: int64
+    session_start_count_lag_1: float64
+    session_start_count_lag_2: float64
+    session_start_count_lag_3: float64
+    session_start_count_lag_24: float64
+    session_start_count_lag_48: float64
+    session_start_count_lag_168: float64
+    session_start_count_rolling_mean_24: float64
+    session_start_count_rolling_std_24: float64
+    session_start_count_rolling_mean_168: float64
+    session_start_count_rolling_std_168: float64
+    started_session_energy_kwh_lag_0: float64
+    started_session_energy_kwh_lag_1: float64
+    started_session_energy_kwh_lag_2: float64
+    started_session_energy_kwh_lag_3: float64
+    started_session_energy_kwh_lag_24: float64
+    started_session_energy_kwh_lag_48: float64
+    started_session_energy_kwh_lag_168: float64
+    started_session_energy_kwh_rolling_mean_24: float64
+    started_session_energy_kwh_rolling_std_24: float64
+    started_session_energy_kwh_rolling_mean_168: float64
+    started_session_energy_kwh_rolling_std_168: float64
+    target_hour: int64
+    target_weekday: int64
+    target_month: int64
+    target_day_of_year: int64
+    target_is_weekend: int64
+    target_hour_sin: float64
+    target_hour_cos: float64
+    target_weekday_sin: float64
+    target_weekday_cos: float64
+    target_day_of_year_sin: float64
+    target_day_of_year_cos: float64
+    forecast_horizon: int64
+    target_datetime: object
+    session_start_count: int64
+    started_session_energy_kwh: float64
+  Ilk 2 satir:
+       origin_datetime  origin_hour  origin_weekday  origin_month  origin_day_of_year  origin_is_weekend  origin_hour_sin  origin_hour_cos  origin_weekday_sin  origin_weekday_cos  origin_day_of_year_sin  origin_day_of_year_cos  session_start_count_lag_0  session_start_count_lag_1  session_start_count_lag_2  session_start_count_lag_3  session_start_count_lag_24  session_start_count_lag_48  session_start_count_lag_168  session_start_count_rolling_mean_24  session_start_count_rolling_std_24  session_start_count_rolling_mean_168  session_start_count_rolling_std_168  started_session_energy_kwh_lag_0  started_session_energy_kwh_lag_1  started_session_energy_kwh_lag_2  started_session_energy_kwh_lag_3  started_session_energy_kwh_lag_24  started_session_energy_kwh_lag_48  started_session_energy_kwh_lag_168  started_session_energy_kwh_rolling_mean_24  started_session_energy_kwh_rolling_std_24  started_session_energy_kwh_rolling_mean_168  started_session_energy_kwh_rolling_std_168  target_hour  target_weekday  target_month  target_day_of_year  target_is_weekend  target_hour_sin  target_hour_cos  target_weekday_sin  target_weekday_cos  target_day_of_year_sin  target_day_of_year_cos  forecast_horizon      target_datetime  session_start_count  started_session_energy_kwh
+0  2022-08-31 00:00:00            0               2             8                 243                  0         0.000000         1.000000            0.974928           -0.222521               -0.861693                -0.50743                          5                        4.0                        4.0                       15.0                         2.0                         3.0                          4.0                             9.541667                            5.999849                             10.119048                             7.251520                             90.10                             75.48                             93.67                            234.46                              65.49                              60.92                              176.31                                  168.567917                                 115.867825                                   178.855774                                  139.709159            0               3             9                 244                  0              0.0              1.0            0.433884           -0.900969               -0.870294               -0.492533                24  2022-09-01 00:00:00                    2                        77.6
+1  2022-08-31 01:00:00            1               2             8                 243                  0         0.258819         0.965926            0.974928           -0.222521               -0.861693                -0.50743                          2                        5.0                        4.0                        4.0                         0.0                         1.0                          1.0                             9.625000                            5.874133                             10.125000                             7.244397                             50.28                             90.10                             75.48                             93.67                               0.00                              26.21                               43.50                                  170.662917                                 113.109156                                   178.896131                                  139.670800            0               3             9                 244                  0              0.0              1.0            0.433884           -0.900969               -0.870294               -0.492533                23  2022-09-01 00:00:00                    2                        77.6
+======================================================================
+DOSYA: C:\Users\HARUN\Desktop\ANA_proje\guney_kore_proje\outputs_feature_engineering\ozellik_listesi.csv
+  Satir: 45  Sutun: 1
+  Sutunlar ve tipleri:
+    feature_name: object
+  Ilk 2 satir:
+     feature_name
+0     origin_hour
+1  origin_weekday
+======================================================================
+DOSYA: C:\Users\HARUN\Desktop\ANA_proje\guney_kore_proje\outputs_modeling\model_karsilastirma_sonuclari.csv
+  Satir: 10  Sutun: 7
+  Sutunlar ve tipleri:
+    target: object
+    model: object
+    dataset: object
+    MAE: float64
+    RMSE: float64
+    WAPE_percent: float64
+    sMAPE_percent: float64
+  Ilk 2 satir:
+                target            model     dataset       MAE       RMSE  WAPE_percent  sMAPE_percent
+0  session_start_count    Baseline_Lag0  validation  8.526938  10.572467     78.486226      95.856276
+1  session_start_count  Baseline_Lag168  validation  8.639113  10.698122     79.518743      96.143863
+======================================================================
+DOSYA: C:\Users\HARUN\Desktop\ANA_proje\guney_kore_proje\outputs_modeling\test_tahminleri.csv
+  Satir: 34008  Sutun: 7
+  Sutunlar ve tipleri:
+    origin_datetime: object
+    target_datetime: object
+    forecast_horizon: int64
+    actual: float64
+    predicted: float64
+    target: object
+    model: object
+  Ilk 2 satir:
+       origin_datetime      target_datetime  forecast_horizon  actual  predicted               target                 model
+0  2022-08-31 00:00:00  2022-09-01 00:00:00                24     2.0    1.46262  session_start_count  HistGradientBoosting
+1  2022-08-31 01:00:00  2022-09-01 00:00:00                23     2.0    1.46262  session_start_count  HistGradientBoosting
+======================================================================
+DOSYA: C:\Users\HARUN\Desktop\ANA_proje\guney_kore_proje\outputs_modeling\ufka_gore_test_hatalari.csv
+  Satir: 48  Sutun: 6
+  Sutunlar ve tipleri:
+    target: object
+    forecast_horizon: int64
+    MAE: float64
+    RMSE: float64
+    WAPE_percent: float64
+    sMAPE_percent: float64
+  Ilk 2 satir:
+                target  forecast_horizon       MAE      RMSE  WAPE_percent  sMAPE_percent
+0  session_start_count                 1  2.958315  4.097678     34.115581      63.123897
+1  session_start_count                 2  2.937626  4.090583     33.919978      62.935382
+======================================================================
+MODELS KLASORU: C:\Users\HARUN\Desktop\ANA_proje\guney_kore_proje\outputs_modeling\models
+  session_start_count_HistGradientBoosting.joblib  (757.9 KB)
+  started_session_energy_kwh_HistGradientBoosting.joblib  (757.9 KB)

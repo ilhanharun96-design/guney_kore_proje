@@ -1,0 +1,40 @@
+
+FEATURE ENGINEERING SONUÇ RAPORU
+================================
+
+Orijinal saatlik gözlem sayısı: 8767
+
+Tahmin ufku: 24 saat
+
+Oluşturulan toplam örnek: 205800
+
+Eğitim verisi: 170940
+Doğrulama verisi: 17856
+Test verisi: 17004
+
+Eğitim hedef tarih aralığı:
+2021-10-07 18:00:00
+-
+2022-07-31 23:00:00
+
+Doğrulama hedef tarih aralığı:
+2022-08-01 00:00:00
+-
+2022-08-31 23:00:00
+
+Test hedef tarih aralığı:
+2022-09-01 00:00:00
+-
+2022-09-30 23:00:00
+
+Özellik sayısı: 45
+
+Tahmin hedefleri:
+- session_start_count
+- started_session_energy_kwh
+
+Tahmin yaklaşımı:
+Direct Multi-Horizon Forecasting
+
+Veri ayrımı:
+Kronolojik; hedef tarihine göre.

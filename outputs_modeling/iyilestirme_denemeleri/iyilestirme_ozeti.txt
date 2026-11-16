@@ -1,0 +1,100 @@
+Rolling-origin ablasyon (TEST VERISI KULLANILMAMISTIR)
+Toplam ozellik: 45  Cikarilan takvim-indeks ozellikleri (8): ['origin_month', 'origin_day_of_year', 'origin_day_of_year_sin', 'origin_day_of_year_cos', 'target_month', 'target_day_of_year', 'target_day_of_year_sin', 'target_day_of_year_cos']
+E1/E2 ozellik sayisi: 37
+Kivrimlar (hedef ay): ['2022-06', '2022-07', '2022-08']
+  tamamlandi: session_start_count / 2022-06  (7 sn)
+  tamamlandi: session_start_count / 2022-07  (6 sn)
+  tamamlandi: session_start_count / 2022-08  (6 sn)
+  tamamlandi: started_session_energy_kwh / 2022-06  (5 sn)
+  tamamlandi: started_session_energy_kwh / 2022-07  (6 sn)
+  tamamlandi: started_session_energy_kwh / 2022-08  (6 sn)
+
+========================================================================
+HEDEF: session_start_count
+========================================================================
+Kontrol: REF Agustos MAE = 3.3427  | rapordaki dogrulama MAE = 3.3427
+
+[MAE]
+fold                         2022-06  2022-07  2022-08  ortalama
+yontem                                                          
+BASE_profil_x_seviye          2.3916   2.5870   2.7110    2.5632
+E2_oran_hedef_agirlikli       2.5010   3.2117   2.8192    2.8440
+E1_takvim_indeksi_cikarildi   2.4763   3.3549   2.7834    2.8716
+BASE_profil_statik            2.6748   3.4411   3.4658    3.1939
+REF_45_ozellik                2.5600   3.8550   3.3427    3.2526
+
+[WAPE]
+fold                         2022-06  2022-07  2022-08  ortalama
+yontem                                                          
+BASE_profil_x_seviye         25.5899  24.4010  24.9539   24.9816
+E2_oran_hedef_agirlikli      26.7611  30.2932  25.9490   27.6677
+E1_takvim_indeksi_cikarildi  26.4966  31.6440  25.6200   27.9202
+BASE_profil_statik           28.6197  32.4562  31.9010   30.9923
+REF_45_ozellik               27.3924  36.3606  30.7683   31.5071
+
+[bias]
+fold                         2022-06  2022-07  2022-08  ortalama
+yontem                                                          
+BASE_profil_statik            1.7418   2.8628   2.7664    2.4570
+BASE_profil_x_seviye          0.0089   0.1698  -0.0919    0.0289
+E1_takvim_indeksi_cikarildi   0.5992   2.3193   0.3098    1.0761
+E2_oran_hedef_agirlikli       0.6158   1.9620   0.2608    0.9462
+REF_45_ozellik                0.0323   3.2168   2.4922    1.9137
+
+[zirve_recall_h24]
+fold                         2022-06  2022-07  2022-08  ortalama
+yontem                                                          
+BASE_profil_statik            0.6800   0.5233   0.5250    0.5761
+BASE_profil_x_seviye          0.6400   0.5116   0.5625    0.5714
+E1_takvim_indeksi_cikarildi   0.5600   0.4186   0.5000    0.4929
+E2_oran_hedef_agirlikli       0.5467   0.4535   0.5000    0.5001
+REF_45_ozellik                0.6267   0.4651   0.5125    0.5348
+
+Karar kriteri (ortalama MAE < REF ve en az 2/3 kivrimda REF'ten iyi):
+  E1_takvim_indeksi_cikarildi: ortalama MAE 2.8716 vs REF 3.2526; 3/3 kivrimda daha iyi -> KRITER SAGLANDI
+  E2_oran_hedef_agirlikli: ortalama MAE 2.8440 vs REF 3.2526; 3/3 kivrimda daha iyi -> KRITER SAGLANDI
+
+========================================================================
+HEDEF: started_session_energy_kwh
+========================================================================
+Kontrol: REF Agustos MAE = 66.1994  | rapordaki dogrulama MAE = 66.1994
+
+[MAE]
+fold                         2022-06  2022-07  2022-08  ortalama
+yontem                                                          
+BASE_profil_x_seviye         50.6247  57.5510  56.8439   55.0065
+E2_oran_hedef_agirlikli      51.6522  68.5577  61.0769   60.4289
+E1_takvim_indeksi_cikarildi  51.1657  72.1626  59.9795   61.1026
+BASE_profil_statik           53.8510  69.6012  69.0115   64.1546
+REF_45_ozellik               55.6697  92.4701  66.1994   71.4464
+
+[WAPE]
+fold                         2022-06  2022-07  2022-08  ortalama
+yontem                                                          
+BASE_profil_x_seviye         31.0041  30.6528  29.5662   30.4077
+E2_oran_hedef_agirlikli      31.6333  36.5152  31.7679   33.3055
+E1_takvim_indeksi_cikarildi  31.3354  38.4353  31.1971   33.6560
+BASE_profil_statik           32.9800  37.0710  35.8949   35.3153
+REF_45_ozellik               34.0938  49.2515  34.4323   39.2592
+
+[bias]
+fold                         2022-06  2022-07  2022-08  ortalama
+yontem                                                          
+BASE_profil_statik           31.6652  53.5389  51.6193   45.6078
+BASE_profil_x_seviye          1.1198   2.6062  -1.3905    0.7785
+E1_takvim_indeksi_cikarildi  10.5174  49.2868   5.5835   21.7959
+E2_oran_hedef_agirlikli      10.1635  32.5987   1.6876   14.8166
+REF_45_ozellik                0.7024  83.7191  40.0449   41.4888
+
+[zirve_recall_h24]
+fold                         2022-06  2022-07  2022-08  ortalama
+yontem                                                          
+BASE_profil_statik            0.5417   0.5467   0.5333    0.5406
+BASE_profil_x_seviye          0.5417   0.5200   0.5067    0.5228
+E1_takvim_indeksi_cikarildi   0.5278   0.4533   0.4933    0.4915
+E2_oran_hedef_agirlikli       0.5139   0.4133   0.4667    0.4646
+REF_45_ozellik                0.5000   0.4667   0.4267    0.4644
+
+Karar kriteri (ortalama MAE < REF ve en az 2/3 kivrimda REF'ten iyi):
+  E1_takvim_indeksi_cikarildi: ortalama MAE 61.1026 vs REF 71.4464; 3/3 kivrimda daha iyi -> KRITER SAGLANDI
+  E2_oran_hedef_agirlikli: ortalama MAE 60.4289 vs REF 71.4464; 3/3 kivrimda daha iyi -> KRITER SAGLANDI

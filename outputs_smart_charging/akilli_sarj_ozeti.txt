@@ -1,0 +1,117 @@
+
+============================================================================
+1. VERI VE OTURUM KUMESI (orijinal dosya degistirilmez; TEST DONEMI KULLANILMAZ)
+============================================================================
+Gecerli oturum: 72039 (rapor: 72039)
+Simule edilen oturum: 8183 (degerlendirme oturumu: 8016); degerlendirme enerjisi: 142929.9 kWh
+Zaman adimi: 15 dk; degerlendirme adimlari: 96..3072 (2976 adim)
+
+============================================================================
+SENARYO U100  (f=1.0)  referans (egitim doneminin saatlik %99'u) = 329.8 kW; degerlendirme donemi kontrolsuz ortalama = 191.8 kW, tepe (15 dk) = 492.2 kW
+============================================================================
+  KONTROL 1 (sonsuz kapasite = kontrolsuz yuk): GECTI
+  KONTROL 2 (saatlik yuk csv ile): korelasyon=0.9938, toplam enerji orani=1.0002 GECTI
+  kapasite %60 (198 kW, donem ortalamasinin 1.03 kati) tamamlandi [2 sn]
+  kapasite %70 (231 kW, donem ortalamasinin 1.20 kati) tamamlandi [4 sn]
+  kapasite %80 (264 kW, donem ortalamasinin 1.38 kati) tamamlandi [6 sn]
+  kapasite %90 (297 kW, donem ortalamasinin 1.55 kati) tamamlandi [7 sn]
+
+============================================================================
+SENARYO F50  (f=0.5)  referans (egitim doneminin saatlik %99'u) = 386.2 kW; degerlendirme donemi kontrolsuz ortalama = 191.9 kW, tepe (15 dk) = 667.4 kW
+============================================================================
+  KONTROL 1 (sonsuz kapasite = kontrolsuz yuk): GECTI
+  KONTROL 2 (saatlik yuk csv ile): korelasyon=0.9937, toplam enerji orani=1.0001 GECTI
+  kapasite %60 (232 kW, donem ortalamasinin 1.21 kati) tamamlandi [9 sn]
+  kapasite %70 (270 kW, donem ortalamasinin 1.41 kati) tamamlandi [11 sn]
+  kapasite %80 (309 kW, donem ortalamasinin 1.61 kati) tamamlandi [13 sn]
+  kapasite %90 (348 kW, donem ortalamasinin 1.81 kati) tamamlandi [14 sn]
+
+============================================================================
+SENARYO F25  (f=0.25)  referans (egitim doneminin saatlik %99'u) = 429.7 kW; degerlendirme donemi kontrolsuz ortalama = 191.9 kW, tepe (15 dk) = 839.8 kW
+============================================================================
+  KONTROL 1 (sonsuz kapasite = kontrolsuz yuk): GECTI
+  KONTROL 2 (saatlik yuk csv ile): korelasyon=0.9917, toplam enerji orani=1.0003 GECTI
+  kapasite %60 (258 kW, donem ortalamasinin 1.34 kati) tamamlandi [16 sn]
+  kapasite %70 (301 kW, donem ortalamasinin 1.57 kati) tamamlandi [18 sn]
+  kapasite %80 (344 kW, donem ortalamasinin 1.79 kati) tamamlandi [19 sn]
+  kapasite %90 (387 kW, donem ortalamasinin 2.02 kati) tamamlandi [21 sn]
+
+============================================================================
+OZET TABLO - U100 (Agustos 2022; esnek olmayan satirlar tek kosu, digerleri 5 tekrar ortalamasi)
+============================================================================
+ kap_%  kapasite_kw  esnek_pay  bekleme_saat  kontrolsuz_asim_saat  kontrolsuz_asim_enerji_pct  karsilanamayan_pct  karsilanamayan_std  ertelenen_pct  geciken_oturum_pct  ort_gecikme_dk  p95_gecikme_dk
+    60       197.86       0.00           0.0                326.50                       18.23               18.22                0.00           0.00                0.00            0.00             0.0
+    60       197.86       0.25           1.0                326.50                       18.23               15.84                0.10           6.44               19.60           53.03            60.0
+    60       197.86       0.25           2.0                326.50                       18.23               14.25                0.12           9.23               19.86           98.19           120.0
+    60       197.86       0.50           1.0                326.50                       18.23               14.28                0.07          12.75               39.12           51.40            60.0
+    60       197.86       0.50           2.0                326.50                       18.23               11.70                0.15          18.54               40.02           92.85           120.0
+    70       230.83       0.00           0.0                242.75                       11.67               11.66                0.00           0.00                0.00            0.00             0.0
+    70       230.83       0.25           1.0                242.75                       11.67                9.04                0.15           5.63               17.70           49.76            60.0
+    70       230.83       0.25           2.0                242.75                       11.67                7.49                0.19           7.92               17.99           86.68           120.0
+    70       230.83       0.50           1.0                242.75                       11.67                7.40                0.12          10.48               34.73           46.38            60.0
+    70       230.83       0.50           2.0                242.75                       11.67                5.01                0.15          14.50               35.56           75.81           120.0
+    80       263.81       0.00           0.0                166.25                        6.95                6.94                0.00           0.00                0.00            0.00             0.0
+    80       263.81       0.25           1.0                166.25                        6.95                4.62                0.13           4.24               15.07           43.89            60.0
+    80       263.81       0.25           2.0                166.25                        6.95                3.47                0.14           5.76               15.22           70.76           120.0
+    80       263.81       0.50           1.0                166.25                        6.95                3.39                0.06           7.30               27.88           39.96            60.0
+    80       263.81       0.50           2.0                166.25                        6.95                1.64                0.06           9.87               28.24           61.90           120.0
+    90       296.79       0.00           0.0                104.75                        3.90                3.89                0.00           0.00                0.00            0.00             0.0
+    90       296.79       0.25           1.0                104.75                        3.90                2.17                0.09           2.87               10.93           40.93            60.0
+    90       296.79       0.25           2.0                104.75                        3.90                1.32                0.12           3.84               11.05           63.51           120.0
+    90       296.79       0.50           1.0                104.75                        3.90                1.29                0.05           4.82               19.67           37.64            60.0
+    90       296.79       0.50           2.0                104.75                        3.90                0.28                0.02           6.09               19.67           52.73           120.0
+
+============================================================================
+OZET TABLO - F50 (Agustos 2022; esnek olmayan satirlar tek kosu, digerleri 5 tekrar ortalamasi)
+============================================================================
+ kap_%  kapasite_kw  esnek_pay  bekleme_saat  kontrolsuz_asim_saat  kontrolsuz_asim_enerji_pct  karsilanamayan_pct  karsilanamayan_std  ertelenen_pct  geciken_oturum_pct  ort_gecikme_dk  p95_gecikme_dk
+    60       231.71       0.00           0.0                 264.5                       18.31                2.44                0.00          34.73               43.80           98.60          270.00
+    60       231.71       0.25           1.0                 264.5                       18.31                1.89                0.05          35.30               43.20          105.09          285.00
+    60       231.71       0.25           2.0                 264.5                       18.31                1.34                0.08          34.84               42.12          113.49          300.00
+    60       231.71       0.50           1.0                 264.5                       18.31                1.46                0.02          36.39               43.89          107.30          296.70
+    60       231.71       0.50           2.0                 264.5                       18.31                0.70                0.04          36.88               43.37          117.02          315.00
+    70       270.33       0.00           0.0                 196.0                       12.09                0.23                0.00          20.82               30.60           85.67          246.00
+    70       270.33       0.25           1.0                 196.0                       12.09                0.10                0.03          21.11               30.14           88.47          255.00
+    70       270.33       0.25           2.0                 196.0                       12.09                0.03                0.03          21.01               29.62           92.08          261.00
+    70       270.33       0.50           1.0                 196.0                       12.09                0.01                0.02          21.33               30.24           89.05          255.00
+    70       270.33       0.50           2.0                 196.0                       12.09                0.00                0.00          21.59               29.93           91.91          267.00
+    80       308.94       0.00           0.0                 134.5                        7.68                0.00                0.00          11.62               21.62           69.73          210.00
+    80       308.94       0.25           1.0                 134.5                        7.68                0.00                0.00          11.70               21.19           71.25          210.00
+    80       308.94       0.25           2.0                 134.5                        7.68                0.00                0.00          11.83               20.85           73.35          213.00
+    80       308.94       0.50           1.0                 134.5                        7.68                0.00                0.00          11.75               21.43           70.69          213.00
+    80       308.94       0.50           2.0                 134.5                        7.68                0.00                0.00          12.02               20.96           73.24          210.15
+    90       347.56       0.00           0.0                  88.5                        4.74                0.00                0.00           6.26               15.21           55.52          165.00
+    90       347.56       0.25           1.0                  88.5                        4.74                0.00                0.00           6.33               15.08           56.25          168.00
+    90       347.56       0.25           2.0                  88.5                        4.74                0.00                0.00           6.48               14.59           58.51          177.00
+    90       347.56       0.50           1.0                  88.5                        4.74                0.00                0.00           6.34               15.13           56.18          171.45
+    90       347.56       0.50           2.0                  88.5                        4.74                0.00                0.00           6.52               14.94           57.37          171.00
+
+============================================================================
+OZET TABLO - F25 (Agustos 2022; esnek olmayan satirlar tek kosu, digerleri 5 tekrar ortalamasi)
+============================================================================
+ kap_%  kapasite_kw  esnek_pay  bekleme_saat  kontrolsuz_asim_saat  kontrolsuz_asim_enerji_pct  karsilanamayan_pct  karsilanamayan_std  ertelenen_pct  geciken_oturum_pct  ort_gecikme_dk  p95_gecikme_dk
+    60       257.85       0.00           0.0                227.50                       18.99                0.04                0.00          36.33               34.68          105.27          330.00
+    60       257.85       0.25           1.0                227.50                       18.99                0.00                0.01          36.21               34.50          106.67          330.00
+    60       257.85       0.25           2.0                227.50                       18.99                0.00                0.00          35.84               34.42          108.22          333.00
+    60       257.85       0.50           1.0                227.50                       18.99                0.00                0.00          36.21               34.50          106.50          330.00
+    60       257.85       0.50           2.0                227.50                       18.99                0.00                0.00          35.93               34.42          108.38          333.75
+    70       300.82       0.00           0.0                168.75                       13.06                0.00                0.00          23.29               24.78           82.89          270.00
+    70       300.82       0.25           1.0                168.75                       13.06                0.00                0.00          23.26               24.72           83.22          270.00
+    70       300.82       0.25           2.0                168.75                       13.06                0.00                0.00          23.05               24.47           84.96          270.00
+    70       300.82       0.50           1.0                168.75                       13.06                0.00                0.00          23.22               24.71           83.22          270.00
+    70       300.82       0.50           2.0                168.75                       13.06                0.00                0.00          23.09               24.59           84.54          273.00
+    80       343.80       0.00           0.0                120.25                        8.67                0.00                0.00          14.17               17.73           66.79          225.00
+    80       343.80       0.25           1.0                120.25                        8.67                0.00                0.00          14.16               17.76           66.87          222.45
+    80       343.80       0.25           2.0                120.25                        8.67                0.00                0.00          14.06               17.58           67.50          222.00
+    80       343.80       0.50           1.0                120.25                        8.67                0.00                0.00          14.16               17.72           67.07          225.00
+    80       343.80       0.50           2.0                120.25                        8.67                0.00                0.00          14.06               17.60           67.40          225.00
+    90       386.77       0.00           0.0                 79.00                        5.75                0.00                0.00           8.25               12.70           52.57          180.00
+    90       386.77       0.25           1.0                 79.00                        5.75                0.00                0.00           8.23               12.66           52.84          174.45
+    90       386.77       0.25           2.0                 79.00                        5.75                0.00                0.00           8.18               12.63           52.77          174.00
+    90       386.77       0.50           1.0                 79.00                        5.75                0.00                0.00           8.23               12.64           53.05          180.00
+    90       386.77       0.50           2.0                 79.00                        5.75                0.00                0.00           8.20               12.50           53.40          180.00
+
+Aciklama: kontrolsuz_asim_* = kapasite olmasaydi kapasiteyi asacak saat/enerji (kontrolsuz sarj).
+karsilanamayan_pct = son teslim zamaninda tamamlanamayan enerji / toplam enerji.
+ertelenen_pct = oturumun nominal sarj penceresinden SONRA teslim edilen enerji / toplam enerji.
+Hepsi senaryo varsayimlarina (f, esnek pay, ek bekleme) ve tek bir ag-toplam kapasitesine baglidir.

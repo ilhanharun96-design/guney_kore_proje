@@ -1,0 +1,199 @@
+
+============================================================================
+0. VERİ YÜKLEME VE BİREBİR İNDEKS KONTROLLERİ
+============================================================================
+  [GEÇTİ] Özellik verisinde Eylül 2022 yok.
+  Özellik verisi: 2021-10-07 18:00:00 - 2022-08-31 23:00:00, 188,796 satır
+  [GEÇTİ] Yük serisinde Eylül 2022 yok.
+  [GEÇTİ] Yük serisi indeksinde tekrarlı kayıt bulunmuyor.
+  [GEÇTİ] Gerekli tüm yük senaryosu sütunları mevcut.
+  [GEÇTİ] Yük serisi zaman indeksi beklenen saatlik dizi ile birebir eşleşiyor (7878 saat).
+  [GEÇTİ] Tüm senaryolara ait yük serisi değerleri sonlu ve geçerli.
+
+============================================================================
+1. GÜNLÜK AŞIM ENERJİSİ HESABI VE VERİ BÜTÜNLÜĞÜ
+============================================================================
+Not: Hedef gün d için origin = (d-1) 23:00.
+Not: S1 = saatlik ihtiyatlı üst sınırdan türetilen günlük aşım skoru;
+     günlük %90 güven sınırı DEĞİLDİR.
+
+==================================================
+Senaryo: U100
+
+  Kıvrım 2022-06: kesme=2022-05-30, cap_ref(%99)=308.7 kW (5622 saat)
+
+  Kıvrım 2022-07: kesme=2022-06-29, cap_ref(%99)=314.0 kW (6342 saat)
+
+  Kıvrım 2022-08: kesme=2022-07-30, cap_ref(%99)=329.9 kW (7086 saat)
+
+==================================================
+Senaryo: F50
+
+  Kıvrım 2022-06: kesme=2022-05-30, cap_ref(%99)=358.4 kW (5622 saat)
+
+  Kıvrım 2022-07: kesme=2022-06-29, cap_ref(%99)=365.8 kW (6342 saat)
+
+  Kıvrım 2022-08: kesme=2022-07-30, cap_ref(%99)=386.7 kW (7086 saat)
+
+==================================================
+Senaryo: F25
+
+  Kıvrım 2022-06: kesme=2022-05-30, cap_ref(%99)=399.6 kW (5622 saat)
+
+  Kıvrım 2022-07: kesme=2022-06-29, cap_ref(%99)=406.6 kW (6342 saat)
+
+  Kıvrım 2022-08: kesme=2022-07-30, cap_ref(%99)=429.8 kW (7086 saat)
+
+[GEÇTİ] Tüm kıvrımlardaki 92 gün ve saat damgası tüm kontrollerden eksiksiz geçti.
+
+============================================================================
+2. KORELASYON HESABI (KIVRIM BAZLI VE HAVUZLANMIŞ)
+============================================================================
+
+============================================================================
+2a. KORELASYON ÖZET TABLOSU (Havuzlanmış)
+============================================================================
+
+[U100]
+ kapasite_orani  n_gun  n_sifir_gercek  n_benzersiz_gercek  spearman_B0_tanimli  spearman_B0  spearman_Pers  spearman_Profil  pearson_B0  ort_spearman_B0_3kivrim
+            0.7     92               0                  92                 True        0.420          0.135            0.345       0.448                    0.330
+            0.8     92               3                  90                 True        0.390          0.146            0.262       0.419                    0.331
+            0.9     92              14                  79                 True        0.366          0.145              NaN       0.387                    0.309
+
+[F50]
+ kapasite_orani  n_gun  n_sifir_gercek  n_benzersiz_gercek  spearman_B0_tanimli  spearman_B0  spearman_Pers  spearman_Profil  pearson_B0  ort_spearman_B0_3kivrim
+            0.7     92               1                  92                 True        0.454          0.190            0.417       0.462                    0.352
+            0.8     92               6                  87                 True        0.420          0.215            0.248       0.442                    0.340
+            0.9     92              16                  77                 True        0.375          0.211              NaN       0.396                    0.326
+
+[F25]
+ kapasite_orani  n_gun  n_sifir_gercek  n_benzersiz_gercek  spearman_B0_tanimli  spearman_B0  spearman_Pers  spearman_Profil  pearson_B0  ort_spearman_B0_3kivrim
+            0.7     92               2                  91                 True        0.484          0.233            0.343       0.493                    0.387
+            0.8     92               5                  88                 True        0.465          0.257            0.211       0.484                    0.391
+            0.9     92              17                  76                 True        0.416          0.300              NaN       0.456                    0.354
+
+============================================================================
+2b. KORELASYON KIVRIM BAZLI DETAY
+============================================================================
+
+[U100] Kapasite %70
+   fold  n_gun  n_sifir_gercek  n_pozitif_gercek  spearman_B0_tanimli  spearman_B0  spearman_Pers  spearman_Profil  pearson_B0
+2022-06     30               0                30                 True        0.243         -0.015            0.356       0.367
+2022-07     31               0                31                 True        0.379          0.165            0.469       0.320
+2022-08     31               0                31                 True        0.367          0.067            0.238       0.382
+  HAVUZ     92               0                92                 True        0.420          0.135            0.345       0.448
+
+[U100] Kapasite %80
+   fold  n_gun  n_sifir_gercek  n_pozitif_gercek  spearman_B0_tanimli  spearman_B0  spearman_Pers  spearman_Profil  pearson_B0
+2022-06     30               1                29                 True        0.285          0.072              NaN       0.403
+2022-07     31               1                30                 True        0.373          0.267            0.290       0.318
+2022-08     31               1                30                 True        0.337         -0.007            0.255       0.340
+  HAVUZ     92               3                89                 True        0.390          0.146            0.262       0.419
+
+[U100] Kapasite %90
+   fold  n_gun  n_sifir_gercek  n_pozitif_gercek  spearman_B0_tanimli  spearman_B0  spearman_Pers  spearman_Profil  pearson_B0
+2022-06     30               6                24                 True        0.282          0.083              NaN       0.535
+2022-07     31               3                28                 True        0.379          0.329              NaN       0.281
+2022-08     31               5                26                 True        0.267         -0.057              NaN       0.330
+  HAVUZ     92              14                78                 True        0.366          0.145              NaN       0.387
+
+[F50] Kapasite %70
+   fold  n_gun  n_sifir_gercek  n_pozitif_gercek  spearman_B0_tanimli  spearman_B0  spearman_Pers  spearman_Profil  pearson_B0
+2022-06     30               1                29                 True        0.321          0.021            0.388       0.432
+2022-07     31               0                31                 True        0.407          0.204            0.493       0.355
+2022-08     31               0                31                 True        0.327          0.132            0.502       0.393
+  HAVUZ     92               1                91                 True        0.454          0.190            0.417       0.462
+
+[F50] Kapasite %80
+   fold  n_gun  n_sifir_gercek  n_pozitif_gercek  spearman_B0_tanimli  spearman_B0  spearman_Pers  spearman_Profil  pearson_B0
+2022-06     30               2                28                 True        0.343          0.063            0.202       0.488
+2022-07     31               3                28                 True        0.342          0.261            0.204       0.316
+2022-08     31               1                30                 True        0.335          0.155            0.431       0.395
+  HAVUZ     92               6                86                 True        0.420          0.215            0.248       0.442
+
+[F50] Kapasite %90
+   fold  n_gun  n_sifir_gercek  n_pozitif_gercek  spearman_B0_tanimli  spearman_B0  spearman_Pers  spearman_Profil  pearson_B0
+2022-06     30               5                25                 True        0.378          0.096              NaN       0.633
+2022-07     31               5                26                 True        0.302          0.303              NaN       0.257
+2022-08     31               6                25                 True        0.297          0.125              NaN       0.361
+  HAVUZ     92              16                76                 True        0.375          0.211              NaN       0.396
+
+[F25] Kapasite %70
+   fold  n_gun  n_sifir_gercek  n_pozitif_gercek  spearman_B0_tanimli  spearman_B0  spearman_Pers  spearman_Profil  pearson_B0
+2022-06     30               1                29                 True        0.341          0.059            0.400       0.440
+2022-07     31               1                30                 True        0.392          0.221            0.378       0.394
+2022-08     31               0                31                 True        0.427          0.229            0.524       0.441
+  HAVUZ     92               2                90                 True        0.484          0.233            0.343       0.493
+
+[F25] Kapasite %80
+   fold  n_gun  n_sifir_gercek  n_pozitif_gercek  spearman_B0_tanimli  spearman_B0  spearman_Pers  spearman_Profil  pearson_B0
+2022-06     30               2                28                 True        0.376          0.103              NaN       0.498
+2022-07     31               3                28                 True        0.348          0.287            0.312       0.376
+2022-08     31               0                31                 True        0.450          0.214              NaN       0.448
+  HAVUZ     92               5                87                 True        0.465          0.257            0.211       0.484
+
+[F25] Kapasite %90
+   fold  n_gun  n_sifir_gercek  n_pozitif_gercek  spearman_B0_tanimli  spearman_B0  spearman_Pers  spearman_Profil  pearson_B0
+2022-06     30               6                24                 True        0.361          0.107              NaN       0.498
+2022-07     31               7                24                 True        0.304          0.355              NaN       0.325
+2022-08     31               4                27                 True        0.396          0.292              NaN       0.474
+  HAVUZ     92              17                75                 True        0.416          0.300              NaN       0.456
+
+============================================================================
+3. BAŞARI ÖLÇÜTLERİ (S1, S2, S3) - ÖNCEDEN KİLİTLENMİŞTİR
+============================================================================
+Karar senaryosu : U100
+Karar kapasite  : ['%70', '%80']
+S1              : Havuzlanmış Spearman(B0) > max(Spearman(Pers), Spearman(Profil))
+                  (Her iki baseline da tanımlı olmalıdır; aksi halde NOT EVALUABLE)
+S2              : Havuzlanmış Spearman(B0) >= 0.6
+                  VE hiçbir kıvrımda Spearman(B0) < 0.45
+                  (Havuz veya herhangi bir kıvrım tanımsız ise NOT EVALUABLE)
+S3 (bilgi)      : U100 %90 kapasitede havuzlanmış Spearman(B0) >= 0.5
+
+[U100] Kapasite %70 = 92 gün
+  Havuz Spearman: B0=0.420 (tanımlı=True) | Pers=0.135 (tanımlı=True) | Profil=0.345 (tanımlı=True)
+  S1: PASS [B0=0.420 > max_baseline=0.345]
+  S2: FAIL [havuz=0.420 >= 0.6: HAYIR | min_kıvrım=0.243 >= 0.45: HAYIR]
+
+[U100] Kapasite %80 = 92 gün
+  Havuz Spearman: B0=0.390 (tanımlı=True) | Pers=0.146 (tanımlı=True) | Profil=0.262 (tanımlı=True)
+  S1: PASS [B0=0.390 > max_baseline=0.262]
+  S2: FAIL [havuz=0.390 >= 0.6: HAYIR | min_kıvrım=0.285 >= 0.45: HAYIR]
+
+[U100] Kapasite %90 = 92 gün
+  Havuz Spearman: B0=0.366 (tanımlı=True) | Pers=0.145 (tanımlı=True) | Profil=nan (tanımlı=False)
+  S1: NOT EVALUABLE (B0 veya baseline Spearman tanımsız)
+  S2: FAIL [havuz=0.366 >= 0.6: HAYIR | min_kıvrım=0.267 >= 0.45: HAYIR]
+
+[U100] S3 (bilgi amaçlı) Kapasite %90:
+  S3: FAIL [Spearman_B0=0.366 >= 0.5]
+
+============================================================================
+GENEL KARAR (U100, %70 ve %80 kapasite): FAIL
+  (S1 veya S2 en az bir kapasite düzeyinde sağlanamadı.)
+============================================================================
+
+============================================================================
+4. DUYARLILIK SENARYOLARI (F50, F25) - BİLGİ AMAÇLI
+============================================================================
+Not: F50/F25 varsayımları mekanik avantaj üretir; yalnızca duyarlılık analizi amaçlıdır.
+
+[F50] Havuzlanmış Spearman:
+ kapasite_orani  n_gun  n_sifir_gercek  spearman_B0_tanimli  spearman_B0  spearman_Pers  spearman_Profil  pearson_B0
+            0.7     92               1                 True        0.454          0.190            0.417       0.462
+            0.8     92               6                 True        0.420          0.215            0.248       0.442
+            0.9     92              16                 True        0.375          0.211              NaN       0.396
+
+[F25] Havuzlanmış Spearman:
+ kapasite_orani  n_gun  n_sifir_gercek  spearman_B0_tanimli  spearman_B0  spearman_Pers  spearman_Profil  pearson_B0
+            0.7     92               2                 True        0.484          0.233            0.343       0.493
+            0.8     92               5                 True        0.465          0.257            0.211       0.484
+            0.9     92              17                 True        0.416          0.300              NaN       0.456
+
+============================================================================
+5. ÇIKTI DOSYALARI
+============================================================================
+  C:\Users\HARUN\Desktop\ANA_proje\guney_kore_proje\outputs_load_profile\siddet_deneyi\siddet_gun_detay.csv     <- günlük aşım enerjisi detayları
+  C:\Users\HARUN\Desktop\ANA_proje\guney_kore_proje\outputs_load_profile\siddet_deneyi\siddet_korelasyonlar.csv <- kıvrım ve havuzlanmış korelasyonlar
+  C:\Users\HARUN\Desktop\ANA_proje\guney_kore_proje\outputs_load_profile\siddet_deneyi\siddet_ozeti.txt         <- bu özet rapor

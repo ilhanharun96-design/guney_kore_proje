@@ -1,0 +1,92 @@
+
+========================================================================
+1. VERI OKUMA KONTROLU (orijinal dosya degistirilmez)
+========================================================================
+Ham satir: 72856  Tekrarsiz satir: 72843  (rapor: 72843)
+Ayristirilamayan/eksik deger iceren satir: 0 (rapor: 0)
+Duration / baglanti araligi (dk) medyan orani: 0.9997  -> tespit edilen Duration birimi: dakika
+
+========================================================================
+2. DISLAMA KONTROLU (saniye duzeyi zaman + tek yonlu fark; rapordaki sayilarla)
+========================================================================
+  negatif_duration                 bu calisma:    17 oturum,    464.11 kWh   | rapor: 17 oturum, 464.11 kWh
+  sifir_duration                   bu calisma:   718 oturum,   3046.02 kWh   | rapor: 718 oturum, 3046.02 kWh
+  duration_baglantidan_5dk_fazla   bu calisma:    69 oturum,   1523.97 kWh   | rapor: 69 oturum, 1523.97 kWh
+  baglanti_araligi_le0             bu calisma:    47 oturum,    705.90 kWh   | rapor: 47 oturum, 705.9 kWh
+  BIRLESIM (ayni oturum bir kez)   bu calisma:   804 oturum,   5034.10 kWh   | rapor: 804 oturum, 5034.1 kWh
+  SONUC: RAPORLA UYUMLU (dislama tanimi dogrulandi)
+Yaklasik guc/yuk analizine uygun oturum: 72039  (rapor: 72039)
+Bilgi: Duration baglanti araligindan 5 dk'dan fazla KISA olan ve DAHIL edilen oturum: 1964, 40017.9 kWh
+  Varsayim: bu oturumlarda enerji oturum basindan itibaren Duration suresince verilmis kabul edilir.
+
+========================================================================
+3. OTURUM OZELLIKLERI (yalnizca 07.10.2021 - 31.08.2022 baslayan gecerli oturumlar)
+========================================================================
+Oturum sayisi: 65041
+Sure (dakika) yuzdelikleri: p5=12.0, p25=42.0, p50=114.0, p75=203.0, p95=454.0, p99=627.6, max=1573.0
+  Suresi > 60 dk olan oturum orani: %66.71
+  Suresi > 240 dk olan oturum orani: %18.47
+  Suresi > 720 dk olan oturum orani: %0.49
+  Suresi > 1440 dk olan oturum orani: %0.00
+Oturum ortalama gucu (Demand/Duration, kW): p5=3.0, p25=6.08, p50=6.7, p75=7.07, p95=41.38, p99=58.03, max=1657.8
+  Ortalama guc > 50 kW: 1055; > 150 kW: 16; > 350 kW: 6 oturum
+Not: Bunlar oturum ortalamasidir; anlik guc degildir. Gucu asiri yuksek kayitlar dislanmadi (raporun karari).
+
+Saatlik izgara: 2021-09-30 17:00:00 baslangic, 8767 saat (rapor: 8767)
+
+========================================================================
+4. YUK PROFILI OLUSTURMA (enerji korunumu kontrolu)
+========================================================================
+  U100: dagitilan toplam enerji farki = 0.000000 kWh (0'a yakin olmali)
+  F50: dagitilan toplam enerji farki = 0.000000 kWh (0'a yakin olmali)
+  F25: dagitilan toplam enerji farki = 0.000000 kWh (0'a yakin olmali)
+
+========================================================================
+5. SENARYO KARSILASTIRMASI (saatlik, 07.10.2021 - 31.08.2022; kWh/saat = ortalama kW)
+========================================================================
+                    ortalama  medyan     p95     p99  maksimum  korelasyon_baslangic_atfi
+baslangic_atfi_kwh    144.53  122.22  379.22  509.07    745.55                       1.00
+yuk_U100_kwh          144.48  138.48  281.10  347.96    442.64                       0.72
+yuk_F50_kwh           144.51  135.18  323.49  408.44    540.27                       0.82
+yuk_F25_kwh           144.51  129.94  350.24  446.33    587.05                       0.89
+
+Duration suresince aktif oturum sayisi (saatlik ortalama): ort=20.92, p95=41.81, max=63.63
+
+========================================================================
+6. ENERJININ BASLANGIC SAATINDEN SONRAYA TASINAN PAYI
+========================================================================
+  U100: enerjinin baslangic saatinden SONRAKI saatlere dusen payi = %73.3
+  F50: enerjinin baslangic saatinden SONRAKI saatlere dusen payi = %58.8
+  F25: enerjinin baslangic saatinden SONRAKI saatlere dusen payi = %40.7
+
+========================================================================
+7. GUN ICI ORTALAMA PROFIL (saat bazinda ortalama, kWh/saat)
+========================================================================
+          baslangic_atfi_kwh  yuk_U100_kwh  yuk_F50_kwh  yuk_F25_kwh  aktif_oturum_ort
+datetime                                                                              
+0                      66.87        155.95       134.36       103.25             26.47
+1                      30.96        125.98        91.79        59.32             21.75
+2                      14.11         97.34        54.79        25.92             17.21
+3                       7.36         73.62        29.05        12.93             13.39
+4                       9.70         54.63        16.36         9.46             10.24
+5                      26.12         43.50        17.76        19.05              8.17
+6                      55.46         45.45        35.27        41.71              7.53
+7                     102.46         67.63        73.31        84.93              9.03
+8                     197.48        104.48       131.61       160.94             13.21
+9                     160.78        144.65       171.46       182.11             18.70
+10                    119.89        154.61       159.32       141.36             20.47
+11                    118.33        142.36       130.03       121.84             18.30
+12                    139.13        137.06       131.47       128.82             16.78
+13                    138.84        139.17       140.83       143.51             16.98
+14                    148.74        144.40       142.62       141.82             17.64
+15                    161.46        148.14       147.93       152.49             18.33
+16                    217.86        161.63       169.74       185.82             20.23
+17                    295.44        188.46       215.48       248.19             24.37
+18                    326.90        215.09       261.99       295.09             29.80
+19                    299.91        235.94       281.79       301.23             34.28
+20                    279.50        240.59       267.48       274.08             36.14
+21                    251.08        239.56       260.69       266.83             36.79
+22                    160.22        219.31       223.92       212.38             34.90
+23                    140.15        187.92       179.07       155.23             31.26
+
+Grafikler ve CSV dosyalari kaydedildi: C:\Users\HARUN\Desktop\ANA_proje\guney_kore_proje\outputs_load_profile

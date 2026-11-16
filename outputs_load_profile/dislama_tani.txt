@@ -1,0 +1,85 @@
+
+========================================================================
+1. HAM SUTUN ORNEKLERI (bicim kontrolu)
+========================================================================
+Tekrarsiz satir: 72843
+     StartDay StartTime     StartDatetime      EndDay   EndTime       EndDatetime  Duration  Demand
+0  2022-09-15  20:54:02  2022-09-15 20:54  2022-09-15  23:59:13  2022-09-15 23:59       185   20.36
+1  2022-09-14  20:01:05  2022-09-14 20:01  2022-09-14  21:31:04  2022-09-14 21:31        90   10.19
+2  2022-09-14  18:54:30  2022-09-14 18:54  2022-09-14  19:54:29  2022-09-14 19:54        60    6.78
+
+========================================================================
+2. DISLAMA NEDENLERI (rapor terimleriyle) - rapordaki sayilarla yan yana
+========================================================================
+  negatif_duration             bu calisma:     17 oturum,     464.11 kWh   | rapor: 17 oturum, 464.11 kWh
+  sifir_duration               bu calisma:    718 oturum,    3046.02 kWh   | rapor: 718 oturum, 3046.02 kWh
+  fark_5dk (rapor tanimi)      bu calisma:   2016 oturum,   40898.04 kWh   | rapor: 69 oturum, 1523.97 kWh
+  baglanti_araligi_le0         bu calisma:    547 oturum,     907.79 kWh   | rapor: 47 oturum, 705.9 kWh
+  BIRLESIM (ayni oturum bir kez): 2877 oturum, 44476.14 kWh | rapor: 804 oturum, 5034.1 kWh
+  Eksik/negatif Demand: 0
+  Yalnizca Duration>0 ve aralik>0 kosuluyla kalan oturum: 71982
+
+========================================================================
+3. DURATION - BAGLANTI ARALIGI FARKI (Duration>0 ve aralik>0 olan oturumlar)
+========================================================================
+         oturum        kwh
+fark_dk                   
+<=1 dk    68652  1195633.8
+1-5        1314    30466.2
+5-10        356     7554.4
+10-30       271     3646.1
+30-120      925    20759.9
+>120        464     8937.7
+|fark|>5 dk olanlar: Duration < aralik: 1951, Duration > aralik: 65
+fark_dk yuzdelikleri (p1,p5,p50,p95,p99): -33.0, -1.0, 0.0, 1.0, 1.0
+
+========================================================================
+4. GUN+SAAT SUTUNLARI ILE DATETIME SUTUNLARI TUTARLI MI?
+========================================================================
+  Start: ayristirilamayan = 0, 60 saniyeden fazla farkli = 0
+  End: ayristirilamayan = 0, 60 saniyeden fazla farkli = 0
+
+========================================================================
+5. ASIRI ORTALAMA GUC KAYITLARI (Demand / Duration)
+========================================================================
+              start  ChargerID  Duration  aralik_dk  Demand  kw_ort
+2022-02-21 15:27:00        775         1        1.0   27.63 1657.80
+2022-09-04 10:45:00         60         2        2.0   29.07  872.10
+2022-09-22 12:43:00       1229         4        4.0   54.85  822.75
+2022-06-18 20:35:00        761         4        4.0   45.04  675.60
+2022-06-03 13:27:00        778         5        5.0   51.18  614.16
+2022-06-26 11:23:00        430         5        5.0   43.74  524.88
+2022-01-11 15:16:00        775         4        3.0   31.73  475.95
+2022-03-09 16:52:00        778         6        7.0   47.50  475.00
+2021-10-25 08:57:00       2414         3     2883.0   15.32  306.40
+2022-07-04 18:17:00        375        14       14.0   58.45  250.50
+2021-12-17 15:40:00         59         4        3.0   15.40  231.00
+2022-06-27 09:16:00       1229        12       12.0   40.86  204.30
+2022-01-25 17:15:00        304         7        7.0   22.70  194.57
+2022-08-19 17:10:00          1         4      120.0   12.42  186.30
+2022-04-16 14:47:00        778        14       14.0   39.77  170.44
+150 kW ustu oturum: 18, toplam enerjisi: 556.1 kWh
+
+========================================================================
+6. LOCATION YAPISI (lokasyon duzeyi tahmin mumkun mu?)
+========================================================================
+Farkli Location: 14; farkli ChargerCompany: 2; farkli ChargerID: 2119
+Lokasyon basina oturum sayisi: medyan=3200, p90=12481, p99=14071, max=14076
+  ortalama >=1 oturum/saat: 3 lokasyon
+  >=0,5 oturum/saat: 6 lokasyon
+  >=0,1 oturum/saat: 12 lokasyon
+
+En cok oturumlu 10 lokasyon:
+                    oturum  oturum_saat  charger_sayisi
+Location                                               
+public area          14076         1.61             437
+apartment            14036         1.60             281
+resort                8854         1.01             138
+hotel                 8598         0.98             133
+company               7557         0.86             141
+public institution    7023         0.80             402
+public parking lot    3394         0.39             205
+market                3005         0.34             106
+restaurant            2222         0.25             117
+camping               1630         0.19               8
+Ilk 10 lokasyonun toplam oturum payi: %96.6

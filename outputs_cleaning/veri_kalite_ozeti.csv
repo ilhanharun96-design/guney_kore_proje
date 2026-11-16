@@ -1,0 +1,25 @@
+﻿Metric,Value
+original_row_count,72856
+original_column_count,13
+remaining_after_duplicate_removal,72843
+duplicate_groups,13
+duplicate_rows_involved,26
+session_data_row_count,72843
+power_data_row_count,72039
+hourly_data_row_count,8767
+negative_duration_count,17
+zero_duration_count,718
+negative_connection_interval_count,17
+duration_longer_than_connection_count,69
+idle_parking_candidate_count,2107
+invalid_start_time_count,0
+invalid_end_time_count,0
+approx_power_over_150_count,18
+approx_power_over_350_count,8
+anonymous_user_count,31553
+anonymous_user_percentage,43.32
+missing_demand_count,0
+negative_demand_count,0
+total_demand_kwh,1270576.21
+start_date_min,2021-09-30 17:14:26
+start_date_max,2022-09-30 23:11:59

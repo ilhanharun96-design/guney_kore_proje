@@ -1,0 +1,70 @@
+Belirsizlik (ust sinir) denemeleri (TEST VERISI KULLANILMAMISTIR)
+Kalibrasyon penceresi: kivrimdan onceki 8 hafta; q degerleri: [0.8, 0.9, 0.95]
+
+========================================================================
+HEDEF: session_start_count
+========================================================================
+
+[S1_karekok] q=0.90 kivrim bazinda
+   fold  kapsama  kapsama_zirve  kapsama_h24  pinball  genislik
+2022-06    0.905          0.929        0.906    0.570     4.220
+2022-07    0.892          0.926        0.890    0.621     4.487
+2022-08    0.919          0.969        0.921    0.637     4.655
+
+[S1_karekok] kivrimlar uzerinden ortalama (her q icin)
+      kapsama  kapsama_zirve  kapsama_h24  pinball  genislik
+q                                                           
+0.80    0.793          0.865        0.794    0.938     2.680
+0.90    0.905          0.941        0.905    0.609     4.454
+0.95    0.955          0.977        0.954    0.370     5.938
+  Nominalden ortalama mutlak sapma (genel + zirve): 0.0264
+
+[S2_orantili] q=0.90 kivrim bazinda
+   fold  kapsama  kapsama_zirve  kapsama_h24  pinball  genislik
+2022-06    0.895          1.000        0.894    0.724     6.019
+2022-07    0.913          0.993        0.913    0.772     6.901
+2022-08    0.914          1.000        0.915    0.819     6.908
+
+[S2_orantili] kivrimlar uzerinden ortalama (her q icin)
+      kapsama  kapsama_zirve  kapsama_h24  pinball  genislik
+q                                                           
+0.80    0.807          0.956        0.806    1.056     3.775
+0.90    0.907          0.998        0.907    0.772     6.609
+0.95    0.957          1.000        0.957    0.551    10.293
+  Nominalden ortalama mutlak sapma (genel + zirve): 0.0555
+
+Onceden belirlenen kurala gore secilen olcek: S1_karekok
+
+========================================================================
+HEDEF: started_session_energy_kwh
+========================================================================
+
+[S1_karekok] q=0.90 kivrim bazinda
+   fold  kapsama  kapsama_zirve  kapsama_h24  pinball  genislik
+2022-06    0.905          0.958        0.903   12.535    91.700
+2022-07    0.884          0.946        0.880   14.063    98.374
+2022-08    0.922          0.972        0.922   14.170   103.475
+
+[S1_karekok] kivrimlar uzerinden ortalama (her q icin)
+      kapsama  kapsama_zirve  kapsama_h24  pinball  genislik
+q                                                           
+0.80    0.789          0.868        0.789   20.976    58.222
+0.90    0.904          0.959        0.902   13.589    97.850
+0.95    0.958          0.970        0.957    8.260   135.668
+  Nominalden ortalama mutlak sapma (genel + zirve): 0.0317
+
+[S2_orantili] q=0.90 kivrim bazinda
+   fold  kapsama  kapsama_zirve  kapsama_h24  pinball  genislik
+2022-06    0.896          1.000        0.897   15.537   127.446
+2022-07    0.908          0.987        0.907   17.539   154.871
+2022-08    0.927          1.000        0.929   17.740   149.226
+
+[S2_orantili] kivrimlar uzerinden ortalama (her q icin)
+      kapsama  kapsama_zirve  kapsama_h24  pinball  genislik
+q                                                           
+0.80    0.801          0.959        0.802   22.726    74.410
+0.90    0.910          0.996        0.911   16.939   143.848
+0.95    0.953          1.000        0.953   11.805   214.241
+  Nominalden ortalama mutlak sapma (genel + zirve): 0.0575
+
+Onceden belirlenen kurala gore secilen olcek: S1_karekok
